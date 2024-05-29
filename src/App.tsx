@@ -2,7 +2,9 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-import LoginButton from "./login.tsx";
+import LoginButton from "./Auth0/login.tsx";
+import LogoutButton from "./Auth0/logout.tsx";
+import Profile from "./Auth0/profile.tsx";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -31,6 +33,13 @@ function App() {
       <div>
         <h1>Login ☻</h1>
         <LoginButton />
+      </div>
+      <div>
+        <h1>Log out ☺</h1>
+        <LogoutButton />
+      </div>
+      <div>
+        <Profile />
       </div>
     </>
   );
